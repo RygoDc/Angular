@@ -1,0 +1,67 @@
+* {
+  width: 100%;
+
+  }
+
+.margin-bottom{
+  margin-bottom: 500px;
+  }
+
+.contenedor-100{
+  border: 1px solid #000;
+  height: 500px;
+  position: relative; //se queda dentro del div la imagen
+  div{
+    border: 1px solid red;
+    height: 100%;
+    }
+  img{
+    position: absolute;
+    height: 80%
+    }
+  }
+
+.social {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  }
+
+.elementos-display{
+  display: grid;
+  grid-template-columns: 1fr 100px;
+
+  p{
+    border: 1px solid blue;
+    }
+
+  p:last-child{
+    grid-column:1/-1;
+    }
+  }
+
+.elementos-flex{
+  height: 200px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    }
+
+  p.primero-p{
+    width:200px;
+    background-color: red;
+    }
+  p.segundo-p{
+      width:250px;
+      background-color: yellow;
+      }
+  }
