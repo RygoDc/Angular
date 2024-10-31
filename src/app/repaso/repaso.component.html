@@ -1,14 +1,11 @@
-<h1>Solo 1 h1</h1>
+<h1>Solo 1 h1 {{nombre}}</h1>
 
-<h2>Primer h2</h2>
+<h2>Primer h2{{edad}}</h2>
 <h2>Segundo h2</h2>
 <h2>Tercer h2</h2>
 
-<h3>Podemos tener cualquiera</h3>
+<h3>Primer h3</h3>
 
-<div>
-  esto es un contenedor
-</div>
 
 <header>
   Aqui el logo
@@ -16,10 +13,50 @@
   Menu (Tendremos el bocadillo -lista - del menu)
 </header>
 
+<h3>Segundo h3</h3>
+<h3 class="{{(cambioColor == true) ? 'blue' : 'red'}}">Tercer h3</h3>
+
+<button type="button" (click)="toggleColor()">Cambiar</button>
+
+<br>
+<h2 
+class="{{escondeAlgo ? 'esconder' : ''}}">
+  HOLAAAAAAAAAAAAAAAAAAAAAAA</h2>
+<button type="button" (click)="ocultarAlgo()">Ocultar</button>
+
+<div *ngIf="escondeAlgo == false">
+  esto es un contenedor de algo Y ME VOY A ESCONDER SI LE DAS AL BOTON OCULTAR
+</div>
+
 <br>
 
+<hr>
+
+<p>For del arreglo elementos</p>
+<div *ngIf="elementos.length > 0">
+  <p *ngFor="let elemento of elementos">
+    {{elemento}}
+  </p>
+</div>
+
+<hr>
+
+<p>FOR del arreglo de la interface Elementos</p>
+<div *ngIf="elementos2.length > 0">
+  <p *ngFor="let elemento of elementos2; let i = index">
+    <span>{{elemento.id}}</span> - 
+    <span>{{elemento.nombre}}</span> , index:   
+    <span>{{i}}</span>
+  </p>
+</div>
+
+<hr>
+
+
+
+
 <footer>
-  Aqui el contenido legal, informacion de la aplicacion que no es relevante
+  Aqui el contenido <span>legal</span>, informacion de la aplicacion que no es relevante
   <br>
   elemento : copyright y quien diseño la app o la version de la app
 </footer>
