@@ -1,0 +1,45 @@
+<div class = "formulario">
+    <hr>
+    <form method="post" action="a donde se envia" enctype="solo si el usuario va a enviar archivo">
+    
+  <div>
+    <label for="username">Usuario </label>
+    <input type="text" id ="username" name="usuario" placeholder="pon tu nombre perro" value="Rodrigo" autocomplete="on" required>
+  </div>
+  <br>
+  <div>
+    <label for="password">Contraseña </label>
+    <input type="password" id ="password" name="password" placeholder="pon tu contraseña perro" value="" autocomplete="on" required>
+  </div>
+  <br>
+<div>
+    <label for="rol">Rol </label>
+    <select id="rol" name="rol" required>
+      <option value="estudiante" selected>Estudiante</option>
+      <option value="profesor">Profesor</option>
+    </select>
+  </div>
+  <br>
+  <div>
+    Selecciona el curso:
+    <input type="radio" id="primerCurso" name="cursos" checked><label for="primerCurso">Primer curso</label>
+    <input type="radio" id="segundoCurso" name="cursos"><label for="segundoCurso">Segundo curso</label>
+  </div>
+  <br>
+<div>
+    Asignaturas:
+    <input type="checkbox" id="datos" name="subjects" required><label for="datos">Acceso a Datos</label>
+    <input type="checkbox" id="interfaces" name="subjects"><label for="datos">Desarrollo de Interfaces</label>
+  </div>
+  <br>
+  <div>
+    <label for="message">Mensaje </label> <br>
+    <textarea placeholder="escribe aqui lo que quieras ... perrro" id="message" required ></textarea>
+  </div>
+  <br>
+  <div>
+    <button type="submit">Enviar</button>
+  </div>
+
+    </form>
+</div>

@@ -1,0 +1,14 @@
+
+
+.formulario{ 
+  border: 1px solid black;
+  align-items: start;
+  justify-content: start;
+  font-size: 20px;
+
+    textarea{
+        height: 250px;
+        width: 80%;
+        resize: none;
+    }
+}
